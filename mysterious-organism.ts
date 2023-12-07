@@ -1,4 +1,4 @@
-const testSamples = (() => {
+export const testSamples = (() => {
     interface OrganismObj {
         specimenNum: number;
         dna: string[];
@@ -11,7 +11,7 @@ const testSamples = (() => {
     }
     const dnaBases = ['A', 'T', 'C', 'G'];
     const mockUpStrand = () => {
-        const newStrand = [];
+        const newStrand: string[] = [];
         for (let i = 0; i < 15; i++) {
             newStrand.push(dnaBases[Math.floor(Math.random() * 4)]);
         }
@@ -104,4 +104,4 @@ const testSamples = (() => {
     // console.log(seaOrg1.mutate());
     // console.log(seaOrg1);
 })();
-console.log(testSamples.at(29)?.complementStrand);
+// console.log(testSamples.at(29)?.complementStrand);
