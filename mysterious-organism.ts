@@ -2,6 +2,10 @@
 //     constructor() {}
 // }
 
+// export class pAequor {
+//     constructor() {}
+// }
+
 export const testSamples = (() => {
     interface OrganismObj {
         specimenNum: number;
@@ -17,7 +21,9 @@ export const testSamples = (() => {
     const mockUpStrand = () => {
         const newStrand: string[] = [];
         for (let i = 0; i < 15; i++) {
-            newStrand.push(dnaBases[Math.floor(Math.random() * 4)]);
+            newStrand.push(
+                dnaBases[Math.floor(Math.random() * dnaBases.length)]
+            );
         }
         return newStrand;
     };
