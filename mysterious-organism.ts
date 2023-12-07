@@ -101,11 +101,18 @@ export const testSamples = (() => {
     // console.log(seaOrg1.willLikelySurvive());
     // console.log(seaOrg2.willLikelySurvive());
 
-    const survivingOrganisms: OrganismObj[] = [];
-    for (let i = 0; survivingOrganisms.length < 30; i++) {
+    // const survivingOrganisms: OrganismObj[] = [];
+    // const survivingOrganisms: [string, OrganismObj][] = [];
+    const survivingOrganisms: { [key: string]: OrganismObj } = {};
+    // for (let i = 0; survivingOrganisms.length < 30; i++) {
+    let sampleNum = 1;
+    for (let i = 0; Object.keys(survivingOrganisms).length < 30; i++) {
         let dna = mockUpStrand(),
             org = pAequorFactory(i, dna);
-        if (org.willLikelySurvive()) survivingOrganisms.push(org);
+        // if (org.willLikelySurvive()) survivingOrganisms.push(org);
+        // if (org.willLikelySurvive()) survivingOrganisms.push([`sample${i}`, org]);
+        if (org.willLikelySurvive())
+            survivingOrganisms[`sample${sampleNum++}`] = org;
     }
     // console.log(survivingOrganisms.length, survivingOrganisms.at(-1));
     // console.log(survivingOrganisms.at(28));
