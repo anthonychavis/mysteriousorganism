@@ -12,7 +12,7 @@ export const testSamples = (() => {
         dna: string[];
         _complementStrand: string[];
         mutate(): string[];
-        compareDNA(pAequor: { dna: string[]; specimenNum: number }): void;
+        compareDNAWith(pAequor: { dna: string[]; specimenNum: number }): void;
         readonly complementStrand: string[];
         setComplementStrand: () => void;
         willLikelySurvive(): boolean;
@@ -32,13 +32,13 @@ export const testSamples = (() => {
             specimenNum: num,
             dna: dnaArr,
             _complementStrand: [],
-            compareDNA(pAequor: { dna: string[]; specimenNum: number }) {
+            compareDNAWith(pAequor: { dna: string[]; specimenNum: number }) {
                 let count = 0;
                 for (let i = 0; i < this.dna.length; i++) {
                     if (this.dna[i] === pAequor.dna[i]) count++;
                 }
                 console.log(
-                    `specimen #${this.specimenNum} and specimen #${
+                    `This specimen, #${this.specimenNum}, and specimen #${
                         pAequor.specimenNum
                     } have ${((count / this.dna.length) * 100).toFixed(
                         2
