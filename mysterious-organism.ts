@@ -1,11 +1,3 @@
-// export class testSamplesClass {
-//     constructor() {}
-// }
-
-// export class pAequor {
-//     constructor() {}
-// }
-
 export const testSamples = (() => {
     interface OrganismObj {
         specimenNum: number;
@@ -90,37 +82,14 @@ export const testSamples = (() => {
             },
         };
     };
-
-    // const dna1 = mockUpStrand();
-    // const seaOrg1 = pAequorFactory(1, dna1);
-
-    // const dna2 = mockUpStrand();
-    // const seaOrg2 = pAequorFactory(2, dna2);
-
-    // seaOrg1.compareDNA(seaOrg2);
-    // console.log(seaOrg1.willLikelySurvive());
-    // console.log(seaOrg2.willLikelySurvive());
-
-    // const survivingOrganisms: OrganismObj[] = [];
-    // const survivingOrganisms: [string, OrganismObj][] = [];
     const survivingOrganisms: { [key: string]: OrganismObj } = {};
-    // for (let i = 0; survivingOrganisms.length < 30; i++) {
     let sampleNum = 1;
     for (let i = 0; Object.keys(survivingOrganisms).length < 30; i++) {
         let dna = mockUpStrand(),
             org = pAequorFactory(i, dna);
-        // if (org.willLikelySurvive()) survivingOrganisms.push(org);
-        // if (org.willLikelySurvive()) survivingOrganisms.push([`sample${i}`, org]);
         if (org.willLikelySurvive())
             survivingOrganisms[`sample${sampleNum++}`] = org;
     }
-    // console.log(survivingOrganisms.length, survivingOrganisms.at(-1));
-    // console.log(survivingOrganisms.at(28));
+    // samples named 1-30
     return survivingOrganisms;
-    // console.log(seaOrg1);
-    // console.log(seaOrg1.mutate());
-    // console.log(seaOrg1);
-    // console.log(seaOrg1.mutate());
-    // console.log(seaOrg1);
 })();
-// console.log(testSamples.at(29)?.complementStrand);
