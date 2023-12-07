@@ -9,6 +9,8 @@ export const testSamples = (() => {
         setComplementStrand: () => void;
         willLikelySurvive(): boolean;
     }
+
+    // move into the obj/class ??
     const dnaBases = ['A', 'T', 'C', 'G'];
     const mockUpStrand = () => {
         const newStrand: string[] = [];
@@ -19,8 +21,10 @@ export const testSamples = (() => {
         }
         return newStrand;
     };
+    // organism object
     const pAequorFactory = (num: number, dnaArr: string[]): OrganismObj => {
         return {
+            // reflects number of iterations w/in survivingOrganisms() needed to create this organism
             specimenNum: num,
             dna: dnaArr,
             _complementStrand: [],
@@ -39,7 +43,7 @@ export const testSamples = (() => {
                 return;
             },
             get complementStrand() {
-                this.setComplementStrand();
+                if (!this._complementStrand.length) this.setComplementStrand();
                 return this._complementStrand;
             },
             setComplementStrand() {
@@ -64,6 +68,7 @@ export const testSamples = (() => {
                 }
                 return;
             },
+            // mutate sindle dna pair
             mutate() {
                 const baseIndex = Math.floor(Math.random() * this.dna.length);
                 const selectedBase = this.dna[baseIndex];
@@ -82,6 +87,7 @@ export const testSamples = (() => {
             },
         };
     };
+    // make object containing 30 organism objects
     const survivingOrganisms: { [key: string]: OrganismObj } = {};
     let sampleNum = 1;
     for (let i = 0; Object.keys(survivingOrganisms).length < 30; i++) {
