@@ -1,3 +1,7 @@
+// export class testSamplesClass {
+//     constructor() {}
+// }
+
 export const testSamples = (() => {
     interface OrganismObj {
         specimenNum: number;
@@ -41,6 +45,7 @@ export const testSamples = (() => {
                 return this._complementStrand;
             },
             setComplementStrand() {
+                this._complementStrand = [];
                 for (let base of this.dna) {
                     switch (base) {
                         case 'A':
