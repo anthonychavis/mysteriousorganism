@@ -58,7 +58,7 @@ export const testSamples = (() => {
                             this._complementStrand.push('G');
                             break;
                         case 'G':
-                            this._complementStrand.push('G');
+                            this._complementStrand.push('C');
                             break;
                         default:
                             'bug in the code';
@@ -72,6 +72,7 @@ export const testSamples = (() => {
                 const newBases = dnaBases.filter(base => base !== selectedBase);
                 this.dna[baseIndex] =
                     newBases[Math.floor(Math.random() * newBases.length)];
+                this.setComplementStrand();
                 return this.dna;
             },
             willLikelySurvive() {
