@@ -39,10 +39,6 @@ Cheat Sheet's [design system][design-system] -->
 
  ![Architecture][architecture] -->
 
-## Sources
-
-The inspiration for this project was Codecademy's JavaScript Practice project called [Mysterious Organism][lesson-site].
-
 ## Extra Info
 
 -   ### About the [creating the organism objects][main-program-file]:
@@ -68,6 +64,10 @@ A lot is different from Codecademy's practice project.
 -   Critique:
     -   I'm open to criticism; very much want to improve rapidly
     -   If you notice something weird, or unsafe, or have food for thought, please don't hesitate to let me know
+
+## Sources
+
+The inspiration for this project was Codecademy's JavaScript Practice project called [Mysterious Organism][lesson-site].
 
 ## Contact
 
