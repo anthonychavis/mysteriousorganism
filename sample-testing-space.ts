@@ -1,11 +1,11 @@
 import { testSamples } from './mysterious-organism';
 // WORKS !! Obj of Objs for readability/portability (as long as mem can handle)
 // console.log(testSamples);
-const sample1 = testSamples.sample1;
+const { sample1 } = testSamples;
 console.log(sample1);
 console.log(sample1.complementStrand);
 
-const sample30 = testSamples.sample30;
+const { sample30 } = testSamples;
 
 // compareTwoDNA(sample1.dna, sample30.dna);
 sample1.compareDNAWith(sample30);
