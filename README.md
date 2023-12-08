@@ -20,7 +20,7 @@ A team of marine biologists found a mysterious organism near hydrothermal vents 
 
 ## Technologies
 
--   TypeScript (target: es2022)
+-   TypeScript
 -   VSCode
 
 <!-- ## Launch
