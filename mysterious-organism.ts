@@ -24,7 +24,7 @@ export const testSamples = (() => {
     // organism object
     const pAequorFactory = (num: number, dnaArr: string[]): OrganismObj => {
         return {
-            // reflects number of iterations w/in survivingOrganisms() needed to create this organism
+            // reflects number of completed iterations w/in survivingOrganisms() until this organism was created
             specimenNum: num,
             dna: dnaArr,
             _complementStrand: [],
