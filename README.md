@@ -16,7 +16,7 @@ Practicing TypeScript (for the sake of Science!)
 
 ## Introduction
 
-A team of marine biologists found a mysterious organism near hydrothermal vents along the seabed. The organism has only 15 DNA bases that frequently mutate. Since the specimen can't survive above sea level and it is difficult to locate it at the seabed, I used an IIFE to created objects to simulate the specimen for the team to study.
+Marine biologists found a mysterious organism near hydrothermal vents along the seabed. The organism has only 15 DNA bases that frequently mutate. Since it can't survive above sea level and is difficult to locate at the seabed, I created objects using an IIFE that simulate the specimen for the team to study.
 
 ## Technologies
 
