@@ -68,7 +68,7 @@ export const testSamples = (() => {
                 }
                 return;
             },
-            // mutate sindle dna pair
+            // mutate single dna pair
             mutate() {
                 const baseIndex = Math.floor(Math.random() * this.dna.length);
                 const selectedBase = this.dna[baseIndex];
