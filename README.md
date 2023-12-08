@@ -41,7 +41,7 @@ Cheat Sheet's [design system][design-system] -->
 
 ## Extra Info
 
--   ### About the [creating the organism objects][main-program-file]:
+-   ### About [creating the organism objects][main-program-file]:
     -   I tried to use inferred typing as much as possible.
         -   For a while, I got away with not needing an interface.
             -   When object typing is required, I prefer interfaces over type aliases for objects because the interface is for them.
