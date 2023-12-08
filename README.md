@@ -45,10 +45,10 @@ The inspiration for this project was Codecademy's JavaScript Practice project ca
 
 ## Extra Info
 
--   ## About the [program][main-program-file]:
+-   ### About the [creating the organism objects][main-program-file]:
     -   I tried to use inferred typing as much as possible.
         -   For a while, I got away with not needing an interface.
-            -   When object typing is required, I prefer interfaces over type aliases for objects because the interface enables stronger typing.
+            -   When object typing is required, I prefer interfaces over type aliases for objects because the interface is for them.
                 <!-- -   Challenged myself to -->
                 <!-- -   It is simplified to a function that will -->
                 <!-- -   _could've _ -->
