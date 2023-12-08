@@ -45,18 +45,24 @@ The inspiration for this project was Codecademy's JavaScript Practice project ca
 
 ## Extra Info
 
+-   ## About the [program][main-program-file]:
+    -   I tried to use inferred typing as much as possible.
+        -   For a while, I got away with not needing an interface.
+            -   When object typing is required, I prefer interfaces over type aliases for objects because the interface enables stronger typing.
+                <!-- -   Challenged myself to -->
+                <!-- -   It is simplified to a function that will -->
+                <!-- -   _could've _ -->
+
+<!-- Thinking using a class for the pAequorFactory would be the best in this situation b/c repeatedly making new instances of the object. That poses an extra challenge for me b/c I'm not so familiar with using TS on Classes. -->
+
+<!-- Also thinking the survivingOrganisms object needs a method (can't remember at the moment which fxn it needs) -->
+
 <!--
 A lot is different from Codecademy's practice project.
 
 - About the README:
   -
-- About the [program][main-program-file]:
-  -
-  - Challenged myself to
-    -
-  - It is simplified to a function that will
-    - _could've  _
-  -
+
   -  -->
 
 -   Critique:
@@ -76,7 +82,7 @@ A lot is different from Codecademy's practice project.
 <!-- [flowchart]:  -->
 <!-- [architecture]:  -->
 <!-- [example-site]:  -->
-<!-- [main-program-file]:  -->
 
+[main-program-file]: https://github.com/anthonychavis/mysteriousorganism/blob/main/mysterious-organism.ts
 [lesson-site]: https://www.codecademy.com/projects/practice/mysterious-organism
 [email]: gitanthony@yahoo.com
