@@ -6,8 +6,8 @@ Practicing TypeScript (for the sake of Science!)
 
 -   [Introduction](#introduction)
 -   [Technologies](#technologies)
--   [Sources](#sources)
 -   [Extra Info](#extra-info)
+-   [Sources](#sources)
 -   [Contact Me](#contact)
     <!-- - [Launch](#launch) -->
     <!-- - [Design System](#design-system) -->
