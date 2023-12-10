@@ -1,5 +1,5 @@
 export default class PAequor {
-    // reflects number of completed iterations w/in survivingOrganisms() until this organism was created -- zero-based
+    // reflects number of completed iterations w/in survivingOrganismsFill() until this organism was created -- zero-based
     specimenNum: number;
     #dnaBases = ['A', 'T', 'C', 'G'];
     #dna = this.#mockUpStrand();
@@ -16,9 +16,9 @@ export default class PAequor {
     }
     compareDNAWith(pAequor: { dna: string[]; specimenNum: number }) {
         let count = 0;
-        for (let i = 0; i < this.#dna.length; i++) {
-            if (this.#dna[i] === pAequor.dna[i]) count++;
-        }
+        for (let i = 0; i < this.#dna.length; i++)
+            this.#dna[i] === pAequor.dna[i] && count++;
+
         return `This specimen, #${this.specimenNum}, and specimen #${
             pAequor.specimenNum
         } have ${((count / this.#dna.length) * 100).toFixed(2)}% DNA in common`;
