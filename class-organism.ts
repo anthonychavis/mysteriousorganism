@@ -25,11 +25,10 @@ export default class PAequor {
     }
     #mockUpStrand(): string[] {
         const newStrand: string[] = [];
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < 15; i++)
             newStrand.push(
                 this.#dnaBases[PAequor.ranNum(this.#dnaBases.length)]
             );
-        }
         return newStrand;
     }
     // mutate single dna pair
@@ -50,7 +49,7 @@ export default class PAequor {
     }
     #setComplementStrand(dna: string[]) {
         this.#complementStrand = [];
-        for (let base of dna) {
+        for (let base of dna)
             switch (base) {
                 case 'A':
                     this.#complementStrand.push('T');
@@ -67,14 +66,11 @@ export default class PAequor {
                 default:
                     'bug in the code';
             }
-        }
         return;
     }
     willLikelySurvive() {
         let count = 0;
-        for (let base of this.#dna) {
-            if (base === 'C' || base === 'G') count++;
-        }
+        for (let base of this.#dna) if (base === 'C' || base === 'G') count++;
         return count / this.dnaLength >= 0.6;
     }
 }
