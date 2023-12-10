@@ -16,7 +16,7 @@ Practicing TypeScript (for the sake of Science!)
 
 ## Introduction
 
-Marine biologists found a mysterious organism near hydrothermal vents along the seabed. The organism has only 15 DNA bases that frequently mutate. Since it can't survive above sea level and is difficult to locate at the seabed, I created objects using an IIFE that simulate the specimen for the team to study.
+Marine biologists found a mysterious organism near hydrothermal vents along the seabed. The organism has only 15 DNA base pairs that frequently mutate. Since it can't survive above sea level and is difficult to locate at the seabed, I created a pAequor class to simulate the specimen for the team to study.
 
 ## Technologies
 
@@ -41,17 +41,15 @@ Cheat Sheet's [design system][design-system] -->
 
 ## Extra Info
 
--   ### About [creating the organism objects][main-program-file]:
-    -   I tried to use inferred typing as much as possible.
-        -   For a while, I got away with not needing an interface.
-            -   When object typing is required, I prefer interfaces over type aliases for objects because the interface is for them.
-                <!-- -   Challenged myself to -->
-                <!-- -   It is simplified to a function that will -->
-                <!-- -   _could've _ -->
+    -   Throughout this project, I tried to use inferred typing as much as possible.
 
-<!-- Thinking using a class for the pAequorFactory would be the best in this situation b/c repeatedly making new instances of the object. That poses an extra challenge for me b/c I'm not so familiar with using TS on Classes. -->
-
-<!-- Also thinking the survivingOrganisms object needs a method (can't remember at the moment which fxn it needs) -->
+-   ### About [creating the organism object][main-program-file]:
+    -   While playing with possible additional features and potentially expanding the capabilities of this project, I quickly found it becoming messy. So, I opted to use a class for the organism object in a separate file.
+    -   [pending... more to come]
+          <!-- -   it was discovered that pAeuquor w/ G & C being 60% or more of the DNA composition would not survive long enough to experiement...too short lifespan .. willLikelySurvive() -->
+          <!-- -   Challenged myself to -->
+          <!-- -   It is simplified to a function that will -->
+          <!-- -   _could've _ -->
 
 <!--
 A lot is different from Codecademy's practice project.
@@ -67,7 +65,7 @@ A lot is different from Codecademy's practice project.
 
 ## Sources
 
-The inspiration for this project was Codecademy's JavaScript Practice project called [Mysterious Organism][lesson-site].
+Though my repo is quite different than the practice project, the inspiration for this repo was Codecademy's JavaScript practice project called [Mysterious Organism][lesson-site].
 
 ## Contact
 
@@ -83,6 +81,8 @@ The inspiration for this project was Codecademy's JavaScript Practice project ca
 <!-- [architecture]:  -->
 <!-- [example-site]:  -->
 
-[main-program-file]: https://github.com/anthonychavis/mysteriousorganism/blob/main/mysterious-organism.ts
+<!-- https://github.com/anthonychavis/mysteriousorganism/blob/main/mysterious-organism.ts -->
+
+[main-program-file]: https://github.com/anthonychavis/mysteriousorganism/blob/main/class-organism.ts
 [lesson-site]: https://www.codecademy.com/projects/practice/mysterious-organism
 [email]: gitanthony@yahoo.com
