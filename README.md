@@ -41,7 +41,7 @@ Cheat Sheet's [design system][design-system] -->
 
 ## Extra Info
 
-    -   Throughout this project, I tried to use inferred typing as much as possible.
+-   Throughout this project, I tried to use inferred typing as much as possible.
 
 -   ### About [creating the organism object][main-program-file]:
     -   While playing with possible additional features and potentially expanding the capabilities of this project, I quickly found it becoming messy. So, I opted to use a class for the organism object in a separate file.
