@@ -26,17 +26,15 @@ export default class PAequor {
     #mockUpStrand(): string[] {
         const newStrand: string[] = [];
         for (let i = 0; i < 15; i++)
-            newStrand.push(
-                this.#dnaBases[PAequor.ranNum(this.#dnaBases.length)]
-            );
+            newStrand.push(this.#dnaBases[this.#ranNum(this.#dnaBases.length)]);
         return newStrand;
     }
     // mutate single dna pair
     mutate() {
-        const baseIndex = PAequor.ranNum(this.dnaLength);
+        const baseIndex = this.#ranNum(this.dnaLength);
         const selectedBase = this.#dna[baseIndex];
         const newBases = this.#dnaBases.filter(base => base !== selectedBase);
-        this.#dna[baseIndex] = newBases[PAequor.ranNum(newBases.length)];
+        this.#dna[baseIndex] = newBases[this.#ranNum(newBases.length)];
         if (!this.willLikelySurvive())
             console.log(
                 'The mutation of a DNA base-pair has caused this organism to die.'
@@ -44,7 +42,7 @@ export default class PAequor {
         this.#setComplementStrand(this.#dna);
         return this.#dna;
     }
-    static ranNum(multiplier: number) {
+    #ranNum(multiplier: number) {
         return Math.floor(Math.random() * multiplier);
     }
     #setComplementStrand(dna: string[]) {
