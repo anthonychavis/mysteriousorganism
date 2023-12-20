@@ -21,6 +21,7 @@ Marine biologists found a mysterious organism near hydrothermal vents along the 
 ## Technologies
 
 -   TypeScript
+-   NodeJS (in TS)
 -   VSCode
 
 <!-- ## Launch
