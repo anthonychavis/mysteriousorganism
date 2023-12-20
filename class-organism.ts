@@ -61,6 +61,12 @@ export class PAequorTesting {
     get dna() {
         return this._dna;
     }
+    #mockUpStrand(): string[] {
+        const newStrand: string[] = [];
+        for (let i = 0; i < 15; i++)
+            newStrand.push(this.#dnaBases[this.#ranNum(this.#dnaBases.length)]);
+        return newStrand;
+    }
     // mutate single dna pair
     mutate() {
         const baseIndex = this.#ranNum(this.dnaLength);
