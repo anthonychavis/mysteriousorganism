@@ -3,8 +3,21 @@
 import { readFileSync } from 'fs';
 import { PAequorTesting } from '../class-organism';
 
-const orgs30Data = readFileSync('./issa-folder/orgs30.json', 'utf8');
-const orgs30 = JSON.parse(orgs30Data);
+// fix any !!
+let orgs30;
+// const filePath = './issa-folder/orgs30.json';
+try {
+    // const orgs30Data = readFileSync('./issa-foder/orgs30.json', 'utf8');
+    const orgs30Data = readFileSync('./issa-folder/orgs30.json', 'utf8');
+    orgs30 = JSON.parse(orgs30Data);
+} catch (e) {
+    console.error(e);
+    orgs30 = {};
+    throw e;
+}
+// } else {
+// console.error('filePath invalid');
+// }
 
 // console.log(orgs30);
 const printObj = (obj: {}, mssg?: string) =>
